@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vic Note</string>
+    <string name="title">Calender</string>
+    <string name="save">Save</string>
+    <string name="price">Money</string>
+    <string name="Com_input_price">金額輸入</string>
+    <string name="Com_category">類型</string>
+
+    <string name="Com_food">飲食</string>
+
+    <string name="Com_account">帳戶</string>
+    <string name="Com_cash">現金</string>
+
+
+    <string name="Com_category_food">飲食</string>
+    <string name="Com_category_daily_item">日常用品</string>
+    <string name="Com_category_transportation">交通</string>
+    <string name="Com_category_gas">水電瓦斯</string>
+    <string name="Com_category_phone">電話網路</string>
+    <string name="Com_category_home">居家</string>
+    <string name="Com_category_clothe">服飾</string>
+    <string name="Com_category_car">汽車</string>
+    <string name="Com_category_entertainment">娛樂</string>
+    <string name="Com_category_hair">美容美髮</string>
+    <string name="Com_category_social">交際應酬</string>
+    <string name="Com_category_learn">學習深造</string>
+    <string name="Com_category_Insurance">保險</string>
+    <string name="Com_category_tax">稅金</string>
+    <string name="Com_category_medical">醫療保健</string>
+    <string name="Com_category_education">教育</string>
+    <string name="Com_category_credit_card">卡費</string>
+    <string name="Com_category_hospital">醫療</string>
+    <string name="Com_category_handing_fee">手續費</string>
+    <string name="Com_category_three_c">3C</string>
+    <string name="Com_category_oil">加油</string>
+    <string name="Com_category_moto">機車</string>
+    <string name="Com_category_car_load">汽車貸款</string>
+    <string name="Com_category_school_loan">學貸</string>
+    <string name="Com_category_rent">房租</string>
+    <string name="Com_category_parking_fee">停車費</string>
+    <string name="Com_category_tolls">過路費</string>
+
+    <string name="Com_category_income">收入</string>
+    <string name="Com_category_pay">支出</string>
+
+
+</resources>

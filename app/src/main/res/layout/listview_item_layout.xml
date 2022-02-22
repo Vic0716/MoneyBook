@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_item"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_width="48dp"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/imageView_item"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shopping_cart"
+            android:layout_width="24dp"
+            android:layout_height="24dp">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/linearlayout_item"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/textview_category"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="類型"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textview_spend_detail"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="消費說明"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/linearLayout_more"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/textview_money"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="金額"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textview_spend_way"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="現金"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/linearLayout_more"
+        android:layout_width="48dp"
+        android:gravity="center"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/imageView_more"
+            android:scaleType="fitCenter"
+            android:src="@drawable/more"
+            android:layout_width="24dp"
+            android:layout_height="24dp">
+        </ImageView>
+
+    </LinearLayout>
+
+</RelativeLayout>

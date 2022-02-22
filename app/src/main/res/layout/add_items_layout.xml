@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--   actionBar   -->
+    <FrameLayout
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/imageView_close"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="start|center"
+            android:src="@drawable/close"
+            android:layout_width="24dp"
+            android:layout_height="24dp">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textColor="@color/main_color"
+                android:id="@+id/button_pay"
+                android:text="@string/Com_category_pay"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+            <Button
+                android:id="@+id/button_income"
+                android:text="@string/Com_category_income"
+                android:textColor="@color/white"
+                android:background="@color/main_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_save"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="end|center"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </FrameLayout>
+    <!--   actionBar   -->
+
+    <!--   body   -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <TextView
+                    android:id="@+id/textview_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="2021年12月13日週一"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/add_items_gap_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <ImageView
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/imageview_price"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/tax"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageview_price"
+                    android:text="@string/price"
+                    android:textSize="14dp"></TextView>
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/editText_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/Com_input_price"
+                    android:text=""></EditText>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/add_items_gap_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_category"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <ImageView
+                    android:id="@+id/imageView_category"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/food">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView_category"
+                    android:text="@string/Com_category"
+                    android:textSize="14dp"></TextView>
+
+                <ImageView
+                    android:id="@+id/imageView_arrow"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/arrow_forward_icons"></ImageView>
+
+                <TextView
+                    android:id="@+id/textView_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toLeftOf="@+id/imageView_arrow"
+                    android:text="@string/Com_food"
+                    android:textColor="@color/black"></TextView>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/add_items_gap_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <ImageView
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/imageView_account"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/home"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView_account"
+                    android:text="@string/Com_account"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/Com_cash"></TextView>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/add_items_gap_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout_detail"
+            android:background="#EBEAEF"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/editText_detail"
+                android:background="@null"
+                android:scrollbars="vertical"
+                android:isScrollContainer="true"
+                android:layout_margin="12dp"
+                android:lineSpacingMultiplier="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <Button
+                android:id="@+id/button_save"
+                android:textColor="@color/white"
+                android:background="@color/main_color"
+                android:text="@string/save"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center|bottom"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content">
+            </Button>
+        </FrameLayout>
+
+
+    </LinearLayout>
+    <!--   body   -->
+
+</LinearLayout>
